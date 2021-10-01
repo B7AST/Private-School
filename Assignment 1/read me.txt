@@ -1,0 +1,5 @@
+Βέλτιστη ανάλυση οθόνης: 1920 x 1080
+Βέλτιστος Browser: Google Chrome
+Δημιουργία Project: on Windows
+Workstation: Visual Studio Code
+Fonts: Google fonts

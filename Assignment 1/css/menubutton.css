@@ -1,0 +1,86 @@
+/* This css files contains only the css for Menu Botton (+ / -) */
+
+/* Size of button */
+.menubutton {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+/* Design 2 lines */
+/* Horizontally line */
+.menubutton #linex {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin: 50% 15%;
+}
+
+/* Vertical line */
+.menubutton #liney {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(90deg);
+}
+/* End of design 2 lines */
+
+/* Add movement to vertical line on hover */
+#container .menubutton:hover > #linex > #liney {
+    transform: rotate(360deg);
+    transition: all 0.4s ease;
+}
+
+/* Add visibility on hover */
+#container .menubutton:hover > .menu {
+    visibility: visible;
+    transition: all 0.4s ease;
+}
+
+/* Navigation Menu style */
+.menubutton .menu {
+    text-align: left;
+    line-height: 50px;
+    visibility: hidden;
+}
+
+.menubutton .menu ul {
+    width: 160px;
+    background-color: rgba(58, 62, 77, 0.95);
+}
+
+.menubutton .menu ul li {
+    list-style: none;
+    width: 160px;
+    position: relative;
+}
+.menubutton .menu ul li:hover {
+    background-color: rgba(70, 75, 95, 0.95);
+}
+
+.menubutton .menu ul li a {
+    text-decoration: none;
+    color: rgb(224, 203, 110);
+    font-size: x-large;
+    font-weight: bold;
+    padding: 15px;
+    display: flex;
+}
+
+/* Sub-links Menu style */
+.menubutton .menu ul ul {
+    position: absolute;
+    left: 250px;
+    width: 163px;
+    bottom: 0;
+    left: 100%;
+    visibility: hidden;
+}
+.menubutton .menu ul li:hover > ul {
+    visibility: visible;
+}
+
+.menubutton .menu ul ul li {
+    width: 163px;
+}
+/* End of Navigation Menu style */

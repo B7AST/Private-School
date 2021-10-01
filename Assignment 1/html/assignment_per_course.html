@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment per Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menubutton.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div id="container"> <!-- The main div (contains everything) -->
+        <header>
+            <div class="menubutton"> <!-- Menu button (contains menu links) -->
+                <div id="linex">
+                    <div id="liney"></div>
+                </div>
+                <nav class="menu"> <!-- Navigation Menu -->
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../html/trainer.html">Trainer</a>
+                            <ul><li><a href="../html/trainer_per_course.html">per Course</a></li></ul>
+                        </li>
+                        <li><a href="../html/course.html">Course</a></li>
+                        <li><a href="../html/assignment.html">Assignment</a>
+                            <ul><li><a href="../html/assignment_per_course.html">per Course</a></li>
+                                <li><a href="../html/assignment_per_student.html">per Student</a></li></ul>
+                        </li>
+                        <li><a href="../html/student.html">Student</a>
+                            <ul><li><a href="../html/student_per_course.html">per Course</a></li></ul>
+                        </li>
+                        <li><a href="../html/contact.html">Contact</a></li>
+                    </ul>
+                </nav> <!-- End of Navigation Menu -->
+            </div> <!-- End of div Menu button -->
+            <h1>Coding Bootcamp</h1>
+        </header>
+        <main>
+        <div id="backimg">
+        <div class="form">
+            <div class="wrapper-form">
+                <h3>Assignment per Course</h3>
+                <div class="underline"></div>
+                <form method="" action="" id="forms1" onsubmit="cancelSubmit(); return false;"> <!-- Form with function to prevent the submit use -->
+                        <select name="subject" class="choose" id="choosesubject" required>
+                            <option>Choose...</option>
+                            <option value="Javascript">Javascript</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="C++">C++</option>
+                        </select>
+                        <input type="text" placeholder="Choose Course..." disabled>
+                        <br/>
+                        <div class="buttons"> <!-- Buttons -->
+                            <input type="submit" name="submit" value="Add" onclick="trainersValidation(), addTrainers(), addTrainersOption()" id="add">
+                            <input type="reset" name="reset" value="Reset" id="reset">
+                            <button onclick="chooseTrainerToEdit()" id="edit">Edit</button>
+                            <button onclick="alertmessage(), updateTrainers()" id="update">Update</button>
+                        </div> <!-- End of buttons -->
+                </form>
+            </div> <!-- End of div wrapper-form -->
+        </div> <!-- End of div form -->
+        </div> <!-- End of div backimg -->
+        </main>
+        <footer><p>Vangelis Konstantinidis PTJS (Assignment_1) 2021 &copy</p></footer>
+    </div> <!-- End of div container -->
+</body>
+</html>
